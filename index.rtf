@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19260\viewh11960\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <title>Be My Valentine \uc0\u55357 \u56460 </title>\
+\
+  <style>\
+    body \{\
+      font-family: Arial, sans-serif;\
+      text-align: center;\
+      background: #ffe6f0;\
+      padding-top: 50px;\
+    \}\
+\
+    img \{\
+      width: 250px;\
+      border-radius: 15px;\
+    \}\
+\
+    h1 \{\
+      color: #d63384;\
+    \}\
+\
+    button \{\
+      font-size: 18px;\
+      padding: 10px 20px;\
+      margin: 15px;\
+      border: none;\
+      border-radius: 10px;\
+      cursor: pointer;\
+    \}\
+\
+    #yes \{\
+      background-color: #ff69b4;\
+      color: white;\
+    \}\
+\
+    #no \{\
+      background-color: #ccc;\
+    \}\
+  </style>\
+</head>\
+\
+<body>\
+  <img src="https://i.imgur.com/9QZ7M9T.png" alt="cute image">\
+  <h1>Will you be my Valentine? \uc0\u55357 \u56470 </h1>\
+\
+  <button id="yes" onclick="sayYes()">Yes</button>\
+  <button id="no" onmouseover="moveNo()">No</button>\
+\
+  <p id="response"></p>\
+\
+  <script>\
+    function sayYes() \{\
+      document.getElementById("response").innerHTML =\
+        "YAY \uc0\u55357 \u56469 !!!";\
+    \}\
+\
+    function moveNo() \{\
+      const noBtn = document.getElementById("no");\
+      noBtn.style.position = "absolute";\
+      noBtn.style.left = Math.random() * 80 + "vw";\
+      noBtn.style.top = Math.random() * 80 + "vh";\
+    \}\
+  </script>\
+</body>\
+</html>}
